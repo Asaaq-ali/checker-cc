@@ -25,12 +25,12 @@ async def start(_, m: Message):
         [
             [
                 InlineKeyboardButton("السورس", url="https://t.me/Mlze1bot"),
-                InlineKeyboardButton("Support", url="https://t.me/Asaaql7"),
+                InlineKeyboardButton("المطور", url="https://t.me/Asaaql7"),
             ],
         ]
     )
     await m.reply_text(
-        f"مرحبا! {messy} \n أنا بوت توليد فيزات .\n\n لرؤية المزيد ارسل /help ",
+        f"مرحبا! {messy} \n أنا بوت فحص فيزات .\n\n لرؤية المزيد ارسل /help ",
         reply_markup=keyboard,
     )
 
