@@ -24,18 +24,13 @@ async def start(_, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Channel", url="https://t.me/szteambots"),
-                InlineKeyboardButton("Support", url="https://t.me/slbotzone"),
-            ],
-            [
-                InlineKeyboardButton(
-                    "Source code", url="https://github.com/ImDenuwan/Bin-Checker-Bot"
-                )
+                InlineKeyboardButton("السورس", url="https://t.me/Mlze1bot"),
+                InlineKeyboardButton("Support", url="https://t.me/Asaaql7"),
             ],
         ]
     )
     await m.reply_text(
-        f"Hi! {messy} \nI can Check bins Valid or Invalid.\n\nTo see more check /help command",
+        f"مرحبا! {messy} \n أنا بوت توليد فيزات .\n\n لرؤية المزيد ارسل /help ",
         reply_markup=keyboard,
     )
 
@@ -43,7 +38,7 @@ async def start(_, m: Message):
 @Bot.on_message(filters.command("help"))
 async def help(_, m: Message):
     await m.reply_text(
-        "/start - **To check bot alive**.\n/help - **To see help menu.**\n/bin [qoury] - **To check Bin is valide or Invalid.**"
+        "/start - **لعوده**.\n/help - **لرؤية قائمة المساعدة..**\n/bin [رقم البين] - **للتحقق من ان البين صالح او لا.**"
     )
 
 
